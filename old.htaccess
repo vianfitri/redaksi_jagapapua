@@ -1,0 +1,42 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_REFERER} !^http://cdn.jagapapua.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://cdn.jagapapua.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://jagapapua.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://jagapapua.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://old.jagapapua.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://old.jagapapua.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://redaksi.jagapapua.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://redaksi.jagapapua.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.cdn.jagapapua.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.cdn.jagapapua.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.jagapapua.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.jagapapua.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.old.jagapapua.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.old.jagapapua.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.redaksi.jagapapua.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.redaksi.jagapapua.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://cdn.jagapapua.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://cdn.jagapapua.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://jagapapua.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://jagapapua.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://old.jagapapua.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://old.jagapapua.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://redaksi.jagapapua.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://redaksi.jagapapua.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.cdn.jagapapua.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.cdn.jagapapua.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.jagapapua.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.jagapapua.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.old.jagapapua.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.old.jagapapua.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.redaksi.jagapapua.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.redaksi.jagapapua.com$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php72” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php56___lsphp .php .php5 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
